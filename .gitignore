@@ -1,0 +1,6 @@
+cromwell-executions/
+cromwell-workflow-logs/
+logs/
+outputs/
+inputs.json
+cromwell-59.jar

@@ -1,0 +1,18 @@
+{
+  "Main.Preprocessing.ref_alt": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.alt\")",
+  "Main.Preprocessing.ref_dict": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.dict\")",
+  "Main.Preprocessing.known_sites_vcf_idxs": "Array[File] (optional, default = [\"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/dbsnp154/dbsnp_154.hg38.vcf.gz.tbi\"])",
+  "Main.Preprocessing.known_sites_vcfs": "Array[File] (optional, default = [\"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/dbsnp154/dbsnp_154.hg38.vcf.gz\"])",
+  "Main.Preprocessing.ref_fasta_idx": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.fai\")",
+  "Main.Preprocessing.ref_ann": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.ann\")",
+  "Main.samples": "Map[String, Array[File]]",
+  "Main.Preprocessing.ref_amb": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.amb\")",
+  "Main.Preprocessing.ref_fasta": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta\")",
+  "Main.library_id": "String",
+  "Main.Preprocessing.ref_sa": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.sa\")",
+  "Main.Preprocessing.conda_env": "String (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/preprocessing/conda_env\")",
+  "Main.Preprocessing.ref_bwt": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.bwt\")",
+  "Main.sample_ids": "Array[String]",
+  "Main.Preprocessing.ref_pac": "File (optional, default = \"/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.pac\")"
+}
+
