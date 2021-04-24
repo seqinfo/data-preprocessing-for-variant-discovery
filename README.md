@@ -19,7 +19,7 @@ Environment: [preprocessing.yaml](preprocessing.yaml)
 ./input.py [-h] path
 ```
 
-Library structure:
+`path` structure:
 ```bash
 library
 ├── sample1
