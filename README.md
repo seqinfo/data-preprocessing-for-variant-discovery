@@ -18,6 +18,21 @@ Environment: [preprocessing.yaml](preprocessing.yaml)
 ```bash
 ./input.py [-h] path
 ```
+
+Library structure:
+```bash
+library
+├── sample1
+│   ├── sample1_S1_L001_R1_001.fastq.gz
+│   ├── ...
+│   └── sample1_S1_L00N_R1_001.fastq.gz
+├── ...
+└── sampleN
+    ├── sampleN_SN_L001_R1_001.fastq.gz
+    ├── ...
+    └── sampleN_SN_L00N_R1_001.fastq.gz
+```
+
 2. Run preprocessing in SLURM using:
 ```bash
 sbatch cromwell.sh
