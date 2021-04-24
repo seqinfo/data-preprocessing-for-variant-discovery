@@ -6,24 +6,24 @@ workflow Preprocessing {
     String sample_id
     Array[File] sample_lanes
 
-    File ref_fasta = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta"
-    File ref_fasta_idx = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.fai"
-    File ref_dict = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.dict"
-    File ref_alt = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.alt"
-    File ref_amb = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.amb"
-    File ref_ann = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.ann"
-    File ref_bwt = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.bwt"
-    File ref_pac = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.pac"
-    File ref_sa = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.sa"
+    File ref_fasta = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta"
+    File ref_fasta_idx = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta.fai"
+    File ref_dict = "gatk_resource_bundle/Homo_sapiens_assembly38.dict"
+    File ref_alt = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.alt"
+    File ref_amb = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.amb"
+    File ref_ann = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.ann"
+    File ref_bwt = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.bwt"
+    File ref_pac = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.pac"
+    File ref_sa = "gatk_resource_bundle/Homo_sapiens_assembly38.fasta.64.sa"
 
     Array[File] known_sites_vcfs = [
-      "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/dbsnp154/dbsnp_154.hg38.vcf.gz"
+      "dbsnp154/dbsnp_154.hg38.vcf.gz"
     ]
     Array[File] known_sites_vcf_idxs = [
-      "/gpfs/hpc/samba/CCHT/service_lab/science/prs/data/dbsnp154/dbsnp_154.hg38.vcf.gz.tbi"
+      "dbsnp154/dbsnp_154.hg38.vcf.gz.tbi"
     ]
 
-    String conda_env = "/gpfs/hpc/samba/CCHT/service_lab/science/prs/preprocessing/conda_env"
+    String conda_env
   }
 
   scatter (sample_lane in sample_lanes) {
